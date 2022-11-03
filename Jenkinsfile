@@ -17,6 +17,7 @@ pipeline {
         stage('AWS S3 ls') {
             steps {
                 sh 'aws s3 ls'
+                echo 'listo'
             }
         } 
         stage('BUILD TO ZIP') {
